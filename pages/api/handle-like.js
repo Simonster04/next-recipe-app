@@ -1,7 +1,7 @@
 import { sanityClient } from "../../lib/sanity";
 
 sanityClient.config({
-    token: "skJ1uTeHQ9VOu8nK5RnhdQGpS6lrSByA5CrLHZY5dquHaouzMeHOzivpKv2KaOVJ7P8zfXGwakjH9I6ywCGKhKguN7baCtmOesevEscV6UaV3wFnGlOhkcU8GpJ3jW0cwPzo3Ox0A1xEVMovkVpuIVGOPgXZhtBWLTSgVa3GUkETTgK9y8BJ"
+    token: process.env.SANITY_WRITE_TOKEN
 });
 
 export default async function likeButtonHandler(req, res) {
